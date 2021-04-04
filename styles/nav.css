@@ -1,0 +1,159 @@
+/* Common nav styles  */
+
+
+.nav-wrapper {
+    
+    background-color: black;   
+    border-bottom: 1px solid #222;
+
+    /* Flexbox container */
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+/* Left column styles */
+
+
+.nav-wrapper > .left-column > .banner-logo {
+    height: 65px;
+    width: 180px;
+    filter: invert(1);
+    margin-right: 25px;
+}
+
+
+svg {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 27px;
+    top: 20px;
+} 
+
+
+ /* Center column styles */
+ 
+.nav-wrapper > .center-column {
+    display: flex;
+    justify-content: flex-start;
+    flex: 3;
+    align-items: center;
+    height: 100%;
+    overflow: visible;
+
+ }
+
+
+.nvbar-link a {
+    color:white;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+ 
+
+ .center-column > .links-wrapper {
+    display: flex;
+    height: 100%;
+ }
+
+ .links-wrapper > .nvbar-link {
+    margin-right: 10px;
+}
+
+.explore-link {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.explore-link::before  { 
+    content: 'Explore';
+    text-transform: uppercase;
+    color: #e9d678; 
+}
+
+.center-column > .links-wrapper > .nvbar-link > .explore-link::before {
+    font-size: 0.83rem;
+    font-weight: normal;
+    line-height: 20px;
+    top: 11px;
+}
+
+.links-wrapper > .top-align a {
+    top: 20px;
+}
+
+.links-wrapper > .col-right a {
+    margin-right: 15px;
+}
+.links-wrapper > .left-align {
+    margin-left: -17px;
+}
+
+.links-wrapper > .spark-tab-align {
+    display: flex;
+}
+
+.links-wrapper > .spark-tab-align a {
+    font-weight: normal;
+    color: #aca7a7;
+}
+
+.spark-dropdown-icon i{
+    color: #aca7a7;
+    margin: 6px 0 0 10px;
+
+}
+
+
+/* Right column styles */
+.nav-wrapper > .right-column > .useract-btn-wrapper {
+    display: flex;
+    gap: 12px;
+    margin-right: 10px;
+}
+
+.useract-btn-wrapper > .userbtn {
+
+    font-family: 'Lato','Ubuntu','Open Sans', sans-serif;
+    background-color: #40424b;
+    color: white;
+    padding: 13px 16px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1.2;
+    outline: none;    
+}
+
+
+.useract-btn-wrapper > .userbtn a{
+    font-family: 'Lato','Ubuntu','Open Sans', sans-serif;;
+    color: white;    
+}
+
+.create-dropdown-icon i{
+    color: #e9d678;
+}
+
+.nav-searchBtn > .search-icon {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-icon i{
+    color: #aca7a7;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+.createBtn {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
